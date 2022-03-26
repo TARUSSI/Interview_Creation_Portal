@@ -3,11 +3,13 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Inconsolata', monospace;
+  /* background-color: #94618e; */
 }
 
 .main {
   margin-top: 20%;
   margin-left: 20%;
+  /* background-color: ; */
 }
 
 
@@ -20,7 +22,9 @@
   /* justify-content: center; */
   font-size: 25px;
   color: white;
-  background-color: #042464;
+  /* background-color: #49274a; */
+  /* background-color: #287094; */
+  background-color: #231651;
   /* min-height: 5vh; */
 }
 
@@ -58,10 +62,124 @@
   color: black;
 } */
 
+.interview-card {
+  padding: 10px 16px;
+  margin: 20px 20px;
+  width : 20rem;
+  text-align: justify;
+  /* border-bottom: 1px solid #f8eee7; */
+  /* background-color: #f6f6f6; */
+  /* background-color: #d6fff6; */
+  background-color: white;
+  border-radius: 7px;
+  box-shadow: 0 2px 4px 1px #cccccc;
+  float: left;
+}
+
+.interview-card:hover {
+  box-shadow: 0 2px 7px 1px rgb(63, 63, 63);
+}
+
+.interview-card h3 {
+  font-size: 1.2rem;
+  color: #2374ab;
+  margin-bottom: 8px;
+}
+
+.interview-card p {
+  font-size: 1rem;
+  /* color: #042464; */
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.edit-btn {
+  color: white;
+  background-color: #64a1e7;
+  background-color: #4dccbd;
+  border-radius: 6px;
+  padding: 2px;
+  margin: 5px;
+  /* cursor: pointer; */
+}
+
+.del-btn {
+  color: white;
+  /* background-color: #f84646; */
+  background-color: #ff8484;
+  border-radius: 6px;
+  padding: 2px;
+  margin: 5px;
+  /* cursor: pointer; */
+}
+
+.reschedule-modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reschedule-content-modal {
+  width: 500px;
+  background-color: #ffffff;
+  border: 2px solid rgba(0, 0, 0, 0.4);
+  border-radius: 7px;
+}
+.reschedule-header-modal , .reschedule-footer-modal {
+  padding: 10px;
+}
+
+.reschedule-title-modal {
+  margin: 0;
+  text-align: center;
+  /* font-weight: 100; */
+  color: #2374ab;
+}
+
+.reschedule-body-modal {
+  padding: 20px;
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  text-align: left;
+}
+
+.reschedule-body-modal label {
+  text-align: left;
+  margin: 2% 0 2%;
+  padding-bottom: 2%;
+}
+
+.reschedule-body-modal input {
+  border: 2px solid #dddddd;
+  display: block;
+  width: 100%;
+  margin: 3%;
+  padding: 10px 10px;
+  box-sizing: border-box;
+}
+
+.reschedule-body-modal select
+{
+  /* border: 2px solid #af2f2f; */
+  /* display: block; */
+  width: 50%;
+  margin: 3%;
+  color: red;
+  /* padding: 10px 10px; */
+  /* box-sizing: border-box; */
+}
+
 .footer {
   color: #e5e5e5;
   text-align: center;
-  background-color:#042464;
+  background-color:#231651;
   /* opacity:; */
   border-top: .05rem solid #e5e5e5;
   bottom: 0;
