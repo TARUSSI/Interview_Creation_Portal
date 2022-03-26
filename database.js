@@ -9,11 +9,27 @@ const pool = createPool({
     connectionlimit: 10
 })
 
-pool.query(`select* from candidates`, (err, result) => {
+function newFunction() {
+    pool.query("select* from interviewer", (err, interviewer, fields) => {
 
         if (err) {
             return console.log(err);
         }
-        return console.log(result);
+        return console.log(interviewer);
 
-    })
+    });
+}
+
+module.exports = {
+    interviewerFunction : function() {
+        pool.query("select* from interviewer", (err, interviewer, fields) => {
+
+            if (err) {
+                return console.log(err);
+            }
+            return interviewer;
+    
+        });
+
+    }
+}
