@@ -13,108 +13,91 @@
 }
 
 
-.header {
-  padding: 20px 20px 20px 20px;
-  margin: 0 auto;
-  display: flex;
+.navbar {
+  display: flexbox;
   flex-direction: column;
-  align-items: center;
-  /* justify-content: center; */
   font-size: 25px;
   color: white;
-  /* background-color: #49274a; */
-  /* background-color: #287094; */
   background-color: #231651;
-  /* min-height: 5vh; */
+  min-height: 10vh;
+  padding: 1.5%;
 }
 
-.header h1 {
+.navbar h1 {
+  float: left;
+  /* padding: 1.5%; */
+  margin-left: 2%;
   font-weight: 500;
 }
-/* 
-.sideNav {
-  height: 100%;
-  width: 20%; 
-  position: fixed; 
-  z-index: 1; 
-  top: 0; 
-  left: 0; 
-  background-color: #042464; 
-  opacity: 0.8;
-  transition: .5s ease;  
-  overflow-x: hidden; 
-  padding-top: 10%; 
-  display: flex; 
-  flex-direction: column; 
-  align-items: center;
-} */
 
-/* .sideNav a {
-  padding: 20px 8px 20px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: azure;
-  display: block;
-  transition: 0.3s;
+.schedule-btn {
+  /* margin-top: 1.5%; */
+  /* margin-bottom: 1.5%; */
+  padding: 8px 5px 8px 5px;
+  float: right;
+  color: white;
+  background-color: #4dccbd;
+  border-radius: 6px;
+  font-size: 1.2rem;
 }
-
-.sideNav a:hover {
-  color: black;
-} */
 
 .interview-card {
   padding: 10px 16px;
   margin: 20px 20px;
+  margin-left: 3%;
   width : 20rem;
   text-align: justify;
-  /* border-bottom: 1px solid #f8eee7; */
-  /* background-color: #f6f6f6; */
-  /* background-color: #d6fff6; */
   background-color: white;
   border-radius: 7px;
   box-shadow: 0 2px 4px 1px #cccccc;
   float: left;
 }
 
-.interview-card:hover {
+.interview-card:hover,
+.schedule-content:hover {
   box-shadow: 0 2px 7px 1px rgb(63, 63, 63);
 }
 
 .interview-card h3 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #2374ab;
-  margin-bottom: 8px;
+  margin-bottom: 10%;
+  text-align: center;
 }
 
 .interview-card p {
-  font-size: 1rem;
-  /* color: #042464; */
+  font-size: 1.1rem;
   margin-bottom: 10px;
   white-space: pre-wrap;
   word-wrap: break-word;
 }
 
-.edit-btn {
+.interview-card-btn {
+  align-items: center;
+}
+
+.edit-btn,
+.submit-btn {
   color: white;
-  background-color: #64a1e7;
   background-color: #4dccbd;
   border-radius: 6px;
-  padding: 2px;
+  padding: 5px;
   margin: 5px;
-  /* cursor: pointer; */
+  font-size: 1rem;
 }
 
-.del-btn {
+.del-btn,
+.cancel-btn {
   color: white;
-  /* background-color: #f84646; */
   background-color: #ff8484;
   border-radius: 6px;
-  padding: 2px;
+  padding: 5px;
   margin: 5px;
-  /* cursor: pointer; */
+  font-size: 1rem;
 }
 
-.reschedule-modal {
+.reschedule-modal,
+.schedule-form {
   position: fixed;
   left: 0;
   top: 0;
@@ -126,24 +109,30 @@
   justify-content: center;
 }
 
-.reschedule-content-modal {
+.reschedule-content-modal,
+.schedule-content {
   width: 500px;
   background-color: #ffffff;
   border: 2px solid rgba(0, 0, 0, 0.4);
   border-radius: 7px;
 }
-.reschedule-header-modal , .reschedule-footer-modal {
+.reschedule-header-modal , .reschedule-footer-modal,
+.schedule-header {
   padding: 10px;
 }
 
-.reschedule-title-modal {
-  margin: 0;
+.reschedule-title-modal,
+.schedule-title {
   text-align: center;
-  /* font-weight: 100; */
+  /* font-weight: 549; */
   color: #2374ab;
+  font-size: 1.5rem;
+  margin-top: 3%;
+  margin-bottom: 2%;
 }
 
-.reschedule-body-modal {
+.reschedule-body-modal, 
+.schedule-body {
   padding: 20px;
   border-top: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
@@ -154,9 +143,21 @@
   text-align: left;
   margin: 2% 0 2%;
   padding-bottom: 2%;
+  font-size: 1.3rem;
+  color: black;
 }
 
-.reschedule-body-modal input {
+.schedule-body label {
+  text-align: left;
+  margin: 2% 0 2%;
+  padding-bottom: 2%;
+  font-size: 1.1rem;
+  color: black;
+  font-weight: 500;
+}
+
+.reschedule-body-modal input,
+.schedule-body input {
   border: 2px solid #dddddd;
   display: block;
   width: 100%;
@@ -165,26 +166,27 @@
   box-sizing: border-box;
 }
 
-.reschedule-body-modal select
+.reschedule-body-modal select,
+.schedule-body select
 {
-  /* border: 2px solid #af2f2f; */
-  /* display: block; */
   width: 50%;
   margin: 3%;
-  color: red;
-  /* padding: 10px 10px; */
-  /* box-sizing: border-box; */
+  color: black;
+}
+
+.schedule-footer {
+  padding-top: 4%;
+  align-items: center;
 }
 
 .footer {
   color: #e5e5e5;
   text-align: center;
   background-color:#231651;
-  /* opacity:; */
   border-top: .05rem solid #e5e5e5;
   bottom: 0;
-  position: absolute;
-  /* margin-left: 20%; */
+  display: flex;
+  position: relative;
   width: 100%;
 }
 

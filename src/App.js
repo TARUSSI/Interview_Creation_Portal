@@ -1,17 +1,25 @@
-// import { BrowserRouter as Router, Route, Routes, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 // import logo from './logo.svg';
 import './App.css';
 import Header from "./components/Header";
-import Footer from "./components/Footer";
 import Dashboard from "./components/Dashboard";
 
 function App() {
-  return (   
+  return (
     <div>
       <Header />
       <Dashboard />
-      <Footer />
     </div>
+
+
+    //<Header />
+    // <Router>
+    //   <Routes>
+    //     <Route path="/" exact element={<Dashboard />}>
+    //     </Route>
+    //   </Routes>
+    // </Router>
+    // <Footer />
   );
 }
 

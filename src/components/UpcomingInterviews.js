@@ -20,7 +20,7 @@ function UpcomingInterviews() {
                 </div>
                 <br></br>
                 <div>
-                    <div>
+                    <div className="interview-card-btn">
                         <button className="edit-btn" 
                         onClick={ () => setShow(true) }>
                             Reschedule

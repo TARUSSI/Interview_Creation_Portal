@@ -1,16 +1,21 @@
 import React from "react";
+import { useState } from "react";
+import Schedule from "./Schedule";
 
 function Header(){
+    const [show, setShow] = useState(false)
+
     return (
-        <header className="header">
+        <div className="navbar">
             <h1>
                 Interview Creation Portal
             </h1>
-            {/* <div className="sideNav">
-                <a href="/">Dashboard</a>
-                <a href="">Schedule</a>
-            </div> */}
-        </header>   
+            <button className="schedule-btn"
+            onClick={ () => setShow(true) }>
+                Schedule
+            </button>
+            <Schedule onClose={() => setShow(false)}  show={show}/>
+        </div>   
     )
 }
 
