@@ -11,3 +11,10 @@ A simple app where admins can create interviews by selecting participants, inter
 - An interviews list page where admin can see all the upcoming interviews.
 - An interview edit page where admin can edit the created interview with the same validations as on the creation page.
 Note: No need to add a page to create Users/Participants. Create them directly in the database
+
+# Steps to build and run this project
+- Clone this repository.
+- Execute npm install
+- Make sure backend is running.
+- Execute npm start.
+- App will start running at http://localhost:3000/
